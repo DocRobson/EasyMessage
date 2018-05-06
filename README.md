@@ -1,28 +1,25 @@
 # EasyMessage
 
-The EasyMessage Library offers an easy way to create dialogs in an app. <br>
-It also makes it possible to show the dialog only at the first start of an app or after every version change, which can be used to show an EULA, changelogs etc. <br>
-With EasyMessage you can... <br>
+The EasyMessage Library offers an easy way to create dialogs in an app.
+It also makes it possible to show the dialog only at the first start of an app or after every version change, which can be used to show an EULA, changelogs etc.
+With EasyMessage you can...
 
-<ul>
-  <li> create dialogs quickly without worrying too much about the details of the implementation </li>
-  <li> show a dialog <b>every time</b>, only on the <b>first start</b> or after every <b>version change</b> </li>
-  <li> decide whether the user has to accept the dialog in order to continue using your app or not </li>
-  <li> change the size and gravity of the title and the text </li>
-  <li> change the text of the buttons to what you like </li>
-</ul>
+
+* create dialogs quickly without worrying too much about the details of the implementation
+* show a dialog **every time**, only on the **first start** or after every **version change**
+* decide whether the user has to accept the dialog in order to continue using your app or not
+* change the **size** and **gravity** of the title and the text
+* change the text of the buttons to what you like
 
 # How to use
 
 You can create a new EasyMessage by calling its constructor:
 
-<code>
   EasyMessage em = new EasyMessage();
-</code>
 
-You can then define the title, text and behaviour of the dialog:
+You can then define the title, text and behaviour of the dialog: 
 
-<code>
+```
   em.setMessageTitle("My title");
   em.setMessageText(R.string.my_message_text, this);
   em.setTitleSize(30);
@@ -32,15 +29,15 @@ You can then define the title, text and behaviour of the dialog:
   em.includeNegativeButton(true);
   em.setPositiveButtonText("Yes");
   em.setNegativeButtonText("hell no");
-</code>
+```
 
 To show the dialog, define an ID for it and just call one of the following methods.
 
-<code>
-  em.show(this, "myMessageId");
-  em.showOnFirstStart(this, "myMessageId");
-  em.showAfterVersionChange(this, "myMessageId");
-</code>
+```
+  em.show(this, "myMessageId"); <br>
+  em.showOnFirstStart(this, "myMessageId"); <br>
+  em.showAfterVersionChange(this, "myMessageId"); <br>
+```
 
 # License
 
