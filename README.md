@@ -1,6 +1,6 @@
 # EasyMessage
 
-The EasyMessage Library offers an easy way to create dialogs in an app.
+The **EasyMessage Library** offers an easy way to create dialogs in an app.
 It also makes it possible to show the dialog only at the first start of an app or after every version change, which can be used to show an EULA, changelogs etc.
 With EasyMessage you can...
 
@@ -15,7 +15,9 @@ With EasyMessage you can...
 
 You can create a new EasyMessage by calling its constructor:
 
+```
   EasyMessage em = new EasyMessage();
+```
 
 You can then define the title, text and behaviour of the dialog: 
 
@@ -34,13 +36,13 @@ You can then define the title, text and behaviour of the dialog:
 To show the dialog, define an ID for it and just call one of the following methods.
 
 ```
-  em.show(this, "myMessageId"); <br>
-  em.showOnFirstStart(this, "myMessageId"); <br>
-  em.showAfterVersionChange(this, "myMessageId"); <br>
+  em.show(this, "myMessageId");
+  em.showOnFirstStart(this, "myMessageId");
+  em.showAfterVersionChange(this, "myMessageId");
 ```
 
 # License
-
+```
 Copyright 2018 Robin Pape
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -54,3 +56,4 @@ Copyright 2018 Robin Pape
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+```
