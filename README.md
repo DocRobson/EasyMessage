@@ -2,8 +2,8 @@
 
 The **EasyMessage Library** offers an easy way to create dialogs in an app.
 It also makes it possible to show the dialog only at the first start of an app or after every version change, which can be used to show an EULA, changelogs etc.
-With EasyMessage you can...
 
+With EasyMessage you can...
 
 * create dialogs quickly without worrying too much about the details of the implementation
 * show a dialog **every time**, only on the **first start** or after every **version change**
